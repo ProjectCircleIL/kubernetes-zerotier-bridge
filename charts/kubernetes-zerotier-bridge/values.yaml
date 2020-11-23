@@ -1,9 +1,9 @@
 environment: "dummy"
 
 zerotier_config:
-  zerotier_network_id: "8........f,"
-  zerotier_network_name: "a................z"
-  zerotier_api_accesstoken: "L.....................v"
+  zerotier_network_id: "netid"
+  zerotier_network_name: "asimplename"
+  zerotier_api_accesstoken: "sometoken"
   zerotier_authorize_member: true
   zerotier_label_service: "zerotier"
 
