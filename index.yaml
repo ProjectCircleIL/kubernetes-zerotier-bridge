@@ -8,6 +8,6 @@ entries:
     digest: c688bcdcf7d12b96c873eaa356f97b432ec867ac7fe5f681fad6a06326a85ee9
     name: kubernetes-zerotier-bridge
     urls:
-    - https://github.com/ProjectCircleIL/kubernetes-zerotier-bridge/releases/download/1.1.0/kubernetes-zerotier-bridge-1.0.0.tgz
+    - https://github.com/ProjectCircleIL/kubernetes-zerotier-bridge/releases/download/1.1.0/kubernetes-zerotier-bridge-1.1.0.tgz
     version: 1.1.0
 generated: "2020-11-29T11:41:54.583577865+02:00"
