@@ -3,11 +3,11 @@ entries:
   kubernetes-zerotier-bridge:
   - apiVersion: v1
     appVersion: 1.6.0
-    created: "2020-11-23T10:34:14.170223664+02:00"
+    created: "2020-11-29T11:41:54.583914574+02:00"
     description: Kubernetes Zerotier Bridge
-    digest: 5f3a334db220546a4ae23a568285ff033570e2a68ea798d446eff8c5bc10b6fc
+    digest: c688bcdcf7d12b96c873eaa356f97b432ec867ac7fe5f681fad6a06326a85ee9
     name: kubernetes-zerotier-bridge
     urls:
-    - https://github.com/ProjectCircleIL/kubernetes-zerotier-bridge/releases/download/1.0.0/kubernetes-zerotier-bridge-1.0.0.tgz
-    version: 1.0.0
-generated: "2020-11-23T10:34:14.169874724+02:00"
+    - https://github.com/ProjectCircleIL/kubernetes-zerotier-bridge/releases/download/1.1.0/kubernetes-zerotier-bridge-1.0.0.tgz
+    version: 1.1.0
+generated: "2020-11-29T11:41:54.583577865+02:00"
