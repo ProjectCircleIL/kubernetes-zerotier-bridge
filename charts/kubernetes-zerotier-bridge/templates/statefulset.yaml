@@ -10,9 +10,10 @@ metadata:
     environment: {{ .Values.environment }}
 spec:
   selector:
-    replicas: 1
     matchLabels:
       service: {{ .Values.zerotier_config.zerotier_label_service }}
+  replicas: 1
+  serviceName: zerotier
   template:
     metadata:
       labels:
@@ -62,14 +63,14 @@ spec:
         hostPath:
           path: /dev/net/tun
 {{- if .Values.persistentVolume.enabled }}
-      volumeClaimTemplates:
-      - metadata:
-          name: ztdata
-        spec:
-          accessModes: [ "ReadWriteOnce" ]
-          resources:
-            requests:
-              storage: 1Gi
+  volumeClaimTemplates:
+  - metadata:
+      name: ztdata
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
 {{- else }}
       - name: ztdata
         emptyDir: {}
