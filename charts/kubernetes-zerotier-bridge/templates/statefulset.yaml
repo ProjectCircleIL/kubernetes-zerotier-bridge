@@ -33,22 +33,22 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: zerotier-{{ .Values.environment }}-{{ .Release.Name }}
-              key: NETWORK-IDS 
+              key: NETWORK-IDS
         - name: ZTHOSTNAME
           valueFrom:
             configMapKeyRef:
               name: zerotier-{{ .Values.environment }}-{{ .Release.Name }}
-              key: ZTHOSTNAME 
+              key: ZTHOSTNAME
         - name: ZTAUTHTOKEN
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: zerotier-{{ .Values.environment }}-{{ .Release.Name }}
-              key: ZTAUTHTOKEN 
+              key: ZTAUTHTOKEN
         - name: AUTOJOIN
           valueFrom:
             configMapKeyRef:
               name: zerotier-{{ .Values.environment }}-{{ .Release.Name }}
-              key: AUTOJOIN 
+              key: AUTOJOIN
         securityContext:
           privileged: true
           capabilities:
